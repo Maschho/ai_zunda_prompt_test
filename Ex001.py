@@ -24,7 +24,7 @@ async def on_message(message):
             content = res["message"]["content"].strip()
 
             if content:
-                await message.reply(content+"\nQwen3.5-9b")
+                await message.reply(content+"\nQwen3-8b")
             else:
                 await message.reply("応答がナイよう")
         except Exception as e:
